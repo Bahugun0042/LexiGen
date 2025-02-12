@@ -1,0 +1,15 @@
+fastapi 
+uvicorn 
+pytesseract 
+pdfplumber 
+transformers 
+torch 
+sentence-transformers 
+chromadb 
+faiss-cpu 
+groq
+python-multipart
+streamlit
+requests
+chromadb
+sentence-transformers
