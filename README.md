@@ -67,8 +67,6 @@ It will open the **LexiGen Web UI** in your browser.
 | `GET`  | `/`      | Check if server is running |
 | `POST` | `/query` | Process query with optional **text, image, or PDF** |
 
-## 👨‍💻 Contributors  
-- **Bahgun Sai Chapalamadugu**  
 
 ---
 
