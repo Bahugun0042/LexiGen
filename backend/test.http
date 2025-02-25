@@ -1,29 +1,29 @@
 ### Image Upload with Query
 POST http://127.0.0.1:8000/query
-Content-Type: multipart/form-data; boundary=BOUNDARY
+Content-Type: multipart/form-data; boundary=BOUNDARY123
 
---BOUNDARY
+--BOUNDARY123
 Content-Disposition: form-data; name="query"
 
 What is in the image?
---BOUNDARY
-Content-Disposition: form-data; name="file"; filename="pic1.webp"
+--BOUNDARY123
+Content-Disposition: form-data; name="file"; filename="hi.png"
 Content-Type: image/webp
 
-< D:/projects/GENAI/data/pic1.webp
---BOUNDARY--
+< D:/projects/GENAI/data/hi.png
+--BOUNDARY123--
   
 ### PDF Upload with Query
 POST http://127.0.0.1:8000/query
-Content-Type: multipart/form-data; boundary=BOUNDARY
+Content-Type: multipart/form-data; boundary=BOUNDARY123
 
---BOUNDARY
+--BOUNDARY123
 Content-Disposition: form-data; name="query"
 
 What does the PDF contain?
---BOUNDARY
-Content-Disposition: form-data; name="file"; filename="CIS Unit-5.pdf"
+--BOUNDARY123
+Content-Disposition: form-data; name="file"; filename="hi2.pdf"
 Content-Type: application/pdf
 
-< D:/projects/GENAI/data/CIS Unit-5.pdf
---BOUNDARY--
+< D:/projects/GENAI/data/hi2.pdf
+--BOUNDARY123--
