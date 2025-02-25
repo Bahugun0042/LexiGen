@@ -1,24 +1,29 @@
-# 🚀 LexiGen: Multimodal Query Processor  
+# 🚀 **LexiGen: Multimodal Query Processor with Chat Memory**  
 
-LexiGen is a **multimodal AI-powered query processor** that can process **text, images (photos), and PDFs** to provide intelligent responses using the **Groq API**.  
+LexiGen is a **multimodal AI-powered query processor** that can handle **text, images, and PDFs** to provide intelligent responses using the **Groq API**. It also includes a **chat memory feature**, allowing the model to retain context within a conversation using **LangChain ConversationBufferMemory**. However, it does not support revisiting past chat sessions.  
 
-## 🔥 Features  
-👉 Accepts **text queries**  
-👉 Processes **images (OCR)** to extract text  
-👉 Reads **PDFs** and extracts meaningful text  
-👉 Uses **Groq API (LLaMA3-8B)** for AI responses  
-👉 Simple **FastAPI** backend  
-👉 User-friendly **Streamlit** UI  
+---
 
-## 📌 Installation  
+## **🔥 Features**  
+✅ **Text Query Processing** – Accepts and processes text-based user queries.  
+✅ **Image Processing (OCR)** – Extracts text from images using **Tesseract OCR**.  
+✅ **PDF Processing** – Reads and extracts meaningful text from **PDFs (pdfplumber)**.  
+✅ **AI-Powered Responses** – Uses **Groq API (LLaMA3-8B)** for intelligent answers.  
+✅ **Chat Memory** – Maintains conversation context **within a session** using **LangChain ConversationBufferMemory**.  
+✅ **FastAPI Backend** – Efficient API to handle user queries and file uploads.  
+✅ **User-Friendly Streamlit UI** – A simple web interface for seamless interaction.  
 
-### 1️⃣ Clone the Repository  
+---
+
+## **📌 Installation**  
+
+### **1️⃣ Clone the Repository**  
 ```sh
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 ```
 
-### 2️⃣ Create & Activate Virtual Environment  
+### **2️⃣ Create & Activate Virtual Environment**  
 ```sh
 python -m venv venv
 # Activate it
@@ -28,38 +33,49 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 3️⃣ Install Dependencies  
+### **3️⃣ Install Dependencies**  
 ```sh
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Set Up Environment Variables  
+### **4️⃣ Set Up Environment Variables**  
 Create a `.env` file and add:  
 ```ini
 GROQ_API_KEY=your_api_key_here
 ```
 
-## 🚀 Usage  
+---
 
-### 1️⃣ Start the FastAPI Backend  
+## **🚀 Usage**  
+
+### **1️⃣ Start the FastAPI Backend**  
 ```sh
 uvicorn main:app --reload
 ```
-It will run at: **`http://127.0.0.1:8000/`**  
+Backend will run at: **`http://127.0.0.1:8000/`**  
 
-### 2️⃣ Run the Streamlit Frontend  
+### **2️⃣ Run the Streamlit Frontend**  
 ```sh
 streamlit run app.py
 ```
 It will open the **LexiGen Web UI** in your browser.  
 
-## 🛠️ Tech Stack  
+---
+
+## **🛠️ Tech Stack**  
 - **Python**  
 - **FastAPI** (Backend)  
 - **Streamlit** (Frontend)  
 - **Groq API** (LLaMA3 Model)  
 - **Tesseract OCR** (Image Processing)  
 - **pdfplumber** (PDF Processing)  
+- **LangChain** (**ConversationBufferMemory** for maintaining chat context)  
+
+---
+
+### 🎉 Enjoy Using LexiGen! 🚀
+
+
 
 ## 🤖 API Endpoints  
 | Method | Endpoint  | Description |
