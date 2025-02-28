@@ -1,7 +1,6 @@
 # 🚀 **LexiGen: Multimodal Query Processor with Chat Memory**  
 
-LexiGen is a **multimodal AI-powered query processor** that can handle **text, images, and PDFs** to provide intelligent responses using the **Groq API**. It also includes a **chat memory feature**, allowing the model to retain context within a conversation using **LangChain ConversationBufferMemory**. However, it does not support revisiting past chat sessions.  
-
+LexiGen is a **multimodal AI-powered query processor** that can handle **text, images, and PDFs** to provide intelligent responses using the **Groq API**. It also includes a **chat memory feature**, allowing the model to retain context within a conversation using **LangChain ConversationBufferMemory**.
 ---
 
 ## **🔥 Features**  
